@@ -1,0 +1,110 @@
+.flag-main {
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    border: 2px solid black;  
+    position: relative;
+    left: 50px;
+    top: 50px;  
+}
+
+.flag-top {
+    width: 900px;
+    height: 200px;
+    background-color: #FF9933;
+}
+
+.flag-middle {
+    width: 900px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: relative;
+
+}
+
+.flag-bottom {
+    width: 900px;
+    height: 200px;
+    background-color: #138808;
+}
+
+
+.wheel {
+	height: 150px;
+	width: 150px;
+	border: 25px solid #000080;
+	border-radius: 50%;
+    position: absolute;
+    left: 355px;
+    animation-name: wheel;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+}
+
+.wheel .line {
+	height: 100%;
+	width: 2px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	background: darkblue;
+	margin: auto;
+}
+
+.line:nth-child(1) {
+	transform: rotate(15deg)
+}
+
+.line:nth-child(2) {
+	transform: rotate(30deg)
+}
+
+.line:nth-child(3) {
+	transform: rotate(45deg)
+}
+
+.line:nth-child(4) {
+	transform: rotate(60deg)
+}
+
+.line:nth-child(5) {
+	transform: rotate(75deg)
+}
+
+.line:nth-child(6) {
+	transform: rotate(90deg)
+}
+
+.line:nth-child(7) {
+	transform: rotate(105deg)
+}
+
+.line:nth-child(8) {
+	transform: rotate(120deg)
+}
+
+.line:nth-child(9) {
+	transform: rotate(135deg)
+}
+
+.line:nth-child(10) {
+	transform: rotate(150deg)
+}
+
+.line:nth-child(11) {
+	transform: rotate(165deg)
+}
+
+.line:nth-child(12) {
+	transform: rotate(180deg)
+}
+
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
